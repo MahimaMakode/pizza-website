@@ -116,8 +116,10 @@ nav ul li a:hover {
     font-family: myFont;
     letter-spacing: 3px;
     background: linear-gradient(to bottom, rgb(35, 9, 9), rgb(134, 0, 0));
-    color: transparent;
+    -webkit-background-clip: text;   /* Required for Safari and mobile Chrome */
     background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent; /* Helps on some WebKit browsers */
 }
 
 .hero-left-site p {
@@ -344,7 +346,7 @@ button {
     letter-spacing: 3px;
     background: linear-gradient(to bottom, rgb(35, 9, 9), rgb(134, 0, 0));
     color: transparent;
-    background-clip: text;
+    -webkit-background-clip: text;
     text-align: center;
 }
 .third-section-div-area{
@@ -368,10 +370,11 @@ button {
 }
 .third-box-design{
     width: 370px;
-    height: 300px;
+    height: auto;
     /* background-color: #ffeaab; */
     position: relative;
     border: 5px solid rgb(106, 0, 0);
+    padding: 10px;
 }
 .logo-1{
 width: 50px;
@@ -442,7 +445,7 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     letter-spacing: 3px;
     background: linear-gradient(to bottom, rgb(35, 9, 9), rgb(134, 0, 0));
     color: transparent;
-    background-clip: text;
+    -webkit-background-clip: text;
     text-align: center;
         padding-top: 20px;
 
@@ -928,7 +931,18 @@ footer{
 
 @media only screen and (max-width : 800px) {
     nav ul {
-        display: none;
+        /* display: none; */
+        width: 0;
+        height: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: center; */
+        position: absolute;
+        top: -260px;
+        background-color: #ffffff;
+        border-radius: 0;
+        transition: all 0.5s;
     }
 
     header {
@@ -948,14 +962,7 @@ footer{
     .showData {
         width: 100%;
         height: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        /* justify-content: center; */
-        position: absolute;
         top: 60px;
-        background-color: #ffffff;
-        border-radius: 0;
     }
 
     nav ul li {
@@ -1563,3 +1570,4 @@ height: 205px;
         padding: 5px 10px;
     }
 }
+
