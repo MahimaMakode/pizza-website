@@ -414,15 +414,14 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 .inner-containter{
     width: 100%;
     height: auto;
-    background-color: blue;
     display: flex;
     align-items:end;
-    justify-content: space-between;
-    padding: 0 10px;
+    justify-content: center;
+    gap: 33%;
+    /* background-color: blue; */
+    padding: 0 0px;
 }
-.inner-containter h3{
-    margin-bottom: 10px;
-}
+
 #fourth-id{
     width: 100%;
         height: auto;
@@ -1306,17 +1305,23 @@ footer{
 .third-box-pizza-conain{
     width: 100%;
     height: auto;
-    padding: 3px 5px;
+    padding: 2px 0px;
 }
-.inner-containter{
-    width: 100%;
-    height: auto;
-    display: flex;
-    align-items:end;
-    /* background-color: rgba(0, 0, 255, 0.334); */
-    padding: 0 5px;
-    overflow: hidden;
-}
+
+    .inner-containter {
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .inner-containter h3 {
+        margin-bottom: 0;
+    }
+    .button-box button{
+        padding-bottom: 90px;
+    }
 #fourth-id{
     width: 100%;
     height: auto;
@@ -1507,5 +1512,54 @@ height: 205px;
 
 }
 
+
+
+ #third-section{
+    width: 100%;
+    height: auto;
+}
+.third-area {
+    width: 100%;
+    height: auto;
+}
+.third-area h1 {
+    font-size: 2.3rem;
+}
+.third-section-div-area{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.third-box-container{
+        gap: 90px ;
+        padding: 0 20px;
+}
+.third-box-pizza-conain{
+    width: 100%;
+    height: auto;
+    padding: 3px 5px;
+}
+.third-box-pizza-conain{
+    width: 100%;
+    height: auto;
+    padding: 2px 0px;
 }
 
+    .inner-containter {
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+        justify-content: center;
+        gap: 20px;
+         /* Optional: Remove blue background for cleaner look */
+    }
+
+    .inner-containter h3 {
+        margin-bottom: 0;
+    }
+
+    .button-box {
+        padding: 5px 10px;
+    }
+}
