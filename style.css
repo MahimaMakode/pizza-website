@@ -1311,11 +1311,15 @@ footer{
     .inner-containter {
         display: flex;
         flex-direction: row;
-        align-items: end;
+        align-items: center;
         justify-content: center;
+        padding: 10px 0;
         gap: 40px;
     }
+.inner-containter button{
+margin: 0;
 
+}
     .inner-containter h3 {
         margin-bottom: 0;
     }
@@ -1372,11 +1376,16 @@ footer{
     width: 60%;
 }
 .five-inner-area{
+    margin-top: 8px;
     width: 100%;
     height: auto;
         display: flex;
 
 }
+
+    .five-inner-area button{
+        top: 0;
+    }
  #six-section{
     width: 100%;
     height: auto;
@@ -1444,6 +1453,9 @@ footer{
     height: auto;
     padding: 30px 10px;
 }
+    .seven-thrid button{
+margin-top: 10px;
+    }
 footer{
     width: 100%;
     height: auto;
@@ -1563,3 +1575,4 @@ height: 205px;
         padding: 5px 10px;
     }
 }
+
