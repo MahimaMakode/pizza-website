@@ -170,7 +170,7 @@ button {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 29px;
-    background-color: #985757;
+    /* background-color: #985757; */
 }
 
 .right-area {
@@ -413,6 +413,7 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .inner-containter{
     width: 100%;
+    height: auto;
     display: flex;
     align-items:end;
     justify-content: space-between;
@@ -1301,6 +1302,10 @@ footer{
 .third-box-container{
         gap: 90px ;
         padding: 0 20px;
+}
+.third-box-pizza-conain{
+    width: 100%;
+    height: auto;
 }
 .inner-containter{
     width: 100%;
