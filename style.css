@@ -417,7 +417,7 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: flex;
     align-items:end;
     justify-content: space-between;
-    /* background-color: blue; */
+    background-color: blue;
     padding: 0 10px;
 }
 .inner-containter h3{
@@ -1306,12 +1306,14 @@ footer{
 .third-box-pizza-conain{
     width: 100%;
     height: auto;
+    padding: 3px 5px;
 }
 .inner-containter{
     width: 100%;
+    height: auto;
     display: flex;
     align-items:end;
-    /* background-color: blue; */
+    /* background-color: rgba(0, 0, 255, 0.334); */
     padding: 0 5px;
     overflow: hidden;
 }
