@@ -346,7 +346,7 @@ button {
     letter-spacing: 3px;
     background: linear-gradient(to bottom, rgb(35, 9, 9), rgb(134, 0, 0));
     color: transparent;
-    background-clip: text;
+    -webkit-background-clip: text;
     text-align: center;
 }
 .third-section-div-area{
@@ -445,9 +445,10 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     letter-spacing: 3px;
     background: linear-gradient(to bottom, rgb(35, 9, 9), rgb(134, 0, 0));
     color: transparent;
-    background-clip: text;
+    -webkit-background-clip: text;
     text-align: center;
-    padding-top: 20px;
+        padding-top: 20px;
+
 }
 .heading p{
     font-size: 95%;
